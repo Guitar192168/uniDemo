@@ -1,15 +1,26 @@
 <template>
-	<div>
-		
-	</div>
+	<view>
+		<view>
+			<view> 弹层内容</view>
+			<view class="message">view标签的:{{message}}</view>
+			<text class="message">text标签的:{{message}}</text>
+		</view>
+	</view>
 </template>
 
 <script>
 	export default {
-		
+		data() {
+			return {
+				message: '测试一下nvue的文字大小和颜色，和变量'
+			}
+		}
 	}
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+	.message {
+		color: #008c8c;
+		font-size: 30px;
+	}
 </style>
