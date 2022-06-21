@@ -1,18 +1,25 @@
 {
-	"leftWindow": {
-		"path": "windows/left-window.vue",
-		"style": {
-			"width": "350px"
-		}
-	},
-	"topWindow": {
-		"path": "windows/top-window.vue",
-		"style": {
-			"height": "60px"
-		}
-	},
+	// "leftWindow": {
+	// 	"path": "windows/left-window.vue",
+	// 	"style": {
+	// 		"width": "350px"
+	// 	}
+	// },
+	// "topWindow": {
+	// 	"path": "windows/top-window.vue",
+	// 	"style": {
+	// 		"height": "60px"
+	// 	}
+	// },
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 测试一下官方动画页面
+		// {
+		// 	"path":"pages/AnimationDemo/01",
+		// 	"style":{
+		// 		"navigationBarTitleText": "测试一下头部"
+		// 	}
+		// },
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -333,6 +340,7 @@
 		}
 		// #endif
 	],
+	// 分包加载机制
 	"subPackages": [{
 			"root": "pages/API",
 			"pages": [{
@@ -1241,6 +1249,9 @@
 							}
 						}
 					}
+					// "root": "pages/template",
+					// "pages": [
+					// 前面还有个分包的路径配置，所以这里的tabbar全路径是pages/template/tabbar/tabbar
 				},
 				{
 					"path": "tabbar/tabbar",
