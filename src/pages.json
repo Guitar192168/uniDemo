@@ -1,33 +1,36 @@
 {
-	// "leftWindow": {
-	// 	"path": "windows/left-window.vue",
-	// 	"style": {
-	// 		"width": "350px"
-	// 	}
-	// },
-	// "topWindow": {
-	// 	"path": "windows/top-window.vue",
-	// 	"style": {
-	// 		"height": "60px"
-	// 	}
-	// },
-	"pages": [
-		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		// 测试BindingX
-		{
-			"path": "pages/AnimationDemo/02_aboutBindingx",
-			"style":{
-				"navigationBarTitleText": "测试nvue的BindingX"
-			}
-		},
-		// 测试一下官方动画页面
-		{
-			"path": "pages/AnimationDemo/01",
+	"leftWindow": {
+		"path": "windows/left-window.vue",
+		"style": {
+			"width": "350px"
+		}
+	},
+	"topWindow": {
+		"path": "windows/top-window.vue",
+		"style": {
+			"height": "60px"
+		}
+	},
+	"pages": [{
+			"path": "pages/Home/home",
 			"style": {
-				"navigationBarTitleText": "测试一下头部"
+				"navigationStyle": "custom", // 需要自定义导航栏
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"subNvues": [{
+						"id": "demo-popup", // 自定义弹层
+						"path": "pages/Home/SubNvue/pop",
+						"type": "popup",
+						"style": {
+							"width": "100%",
+							"height": "100%",
+							"background": "transparent"
+						}
+					}]
+				}
 			}
+
 		},
-		// 上面几个留着真机测试
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -45,6 +48,39 @@
 				}
 			}
 		},
+		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 测试BindingX
+		{
+			"path": "pages/AnimationDemo/02_aboutBindingx",
+			"style": {
+				"navigationBarTitleText": "测试nvue的BindingX"
+			}
+		},
+		// 测试一下官方动画页面
+		{
+			"path": "pages/AnimationDemo/01",
+			"style": {
+				"navigationBarTitleText": "测试一下头部"
+			}
+		},
+		// 上面几个留着真机测试
+		// {
+		// 	"path": "pages/tabBar/component/component",
+		// 	"style": {
+		// 		"navigationBarTitleText": "内置组件",
+		// 		"app-plus": {
+		// 			"bounce": "vertical",
+		// 			"titleNView": {
+		// 				"buttons": [{
+		// 					"text": "\ue534",
+		// 					"fontSrc": "/static/uni.ttf",
+		// 					"fontSize": "22px",
+		// 					"color": "#FFFFFF"
+		// 				}]
+		// 			}
+		// 		}
+		// 	}
+		// },
 		{
 			"path": "pages/tabBar/API/API",
 			"style": {
