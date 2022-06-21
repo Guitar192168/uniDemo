@@ -13,13 +13,21 @@
 	// },
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 测试BindingX
+		{
+			"path": "pages/AnimationDemo/02_aboutBindingx",
+			"style":{
+				"navigationBarTitleText": "测试nvue的BindingX"
+			}
+		},
 		// 测试一下官方动画页面
-		// {
-		// 	"path":"pages/AnimationDemo/01",
-		// 	"style":{
-		// 		"navigationBarTitleText": "测试一下头部"
-		// 	}
-		// },
+		{
+			"path": "pages/AnimationDemo/01",
+			"style": {
+				"navigationBarTitleText": "测试一下头部"
+			}
+		},
+		// 上面几个留着真机测试
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -1250,7 +1258,7 @@
 						}
 					}
 					// "root": "pages/template",
-					// "pages": [
+					// "pages": []
 					// 前面还有个分包的路径配置，所以这里的tabbar全路径是pages/template/tabbar/tabbar
 				},
 				{

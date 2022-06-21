@@ -49,7 +49,7 @@
 			console.log('App Hide')
 		},
 		globalData: {
-			test: ''
+			test: '我是全局数据'
 		},
 		methods: {
 			...mapMutations(['setUniverifyErrorMsg', 'setUniverifyLogin'])
